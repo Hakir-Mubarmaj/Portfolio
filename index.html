@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.tailwindcss.com"/>
+
+    <title>Document</title>
+</head>
+<body>
+	<nav class="fixed top-0 w-full z-50 bg-gray-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-18">
+            <div class="flex items-center grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            <div class="flex-shrink-0">
+              <p class="text-white font-bold flex items-center"><img class="h-16" src="https://i.ibb.co/k2FGtQV/attachment-1494076-removebg-preview.png" alt="">My Portfolio</p>
+            </div>
+            <div class="nav-mid hidden md:block">
+                <ul class="ml-10 flex items-baseline space-x-8">
+                <li class="link"><a href="#home" class="text-gray-400 hover:bg-gray-700 hover:text-white px-8 py-5 text-l font-medium hover:font-bold">Home</a></li>
+                <li class="link"><a href="#about" class="text-gray-400 hover:bg-gray-700 hover:text-white px-8 py-5 text-l font-medium hover:font-bold">About</a></li>
+                <li class="link"><a href="#projects" class="text-gray-400 hover:bg-gray-700 hover:text-white px-8 py-5 text-l font-medium hover:font-bold">Projects</a></li>
+                <li class="link"><a href="#skills" class="text-gray-400 hover:bg-gray-700 hover:text-white px-8 py-5 text-l font-medium hover:font-bold">Skills</a></li>
+                </ul>
+            </div>
+            <div><pre> </pre></div>
+            <div class="nav-l">
+              <p>لَا إِلٰهَ إِلَّا ٱلله مُحَمَّدٌ رَسُولُ ٱلله</p>
+            </div>
+          </div>
+          <div class="-mr-2 flex md:hidden">
+            <button id="navbar-toggle" type="button" class="bg-gray-700 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <!-- Icon when menu is closed. -->
+              <!-- Menu open: "hidden", Menu closed: "block" -->
+              <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <!-- Icon when menu is open. -->
+              <!-- Menu open: "block", Menu closed: "hidden" -->
+              <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>         
+            <div id="mobile-menu" class="hidden md:hidden">
+              <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#about" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>          
+                <a href="#projects" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>          
+                <a href="#skills" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Skills</a>
+              </div>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </nav>
+	
+	<section class="full-height bg-[url('https://i.ibb.co/T4YpZ0x/123.jpg')] bg-no-repeat bg-cover bg-center" id="home">
+        <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="flex items-center grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-2">
+          <div class="home1 typing-text">
+            <h1 class="audiowide text-7xl font-bold">Hi There,</h1><br>
+            <h1 class="audiowide text-6xl font-bold flex">I'm<pre> </pre><p class="sofia text-gray-500">Tanvir Ahmed</p></h1><br>
+            <h1 class="trirong text-3xl font-bold">An Android And Web Developer.</h1><br>
+            <a href="#" class="button animate__animated animate__bounceIn animate__delay-2s inline-block bg-white text-gray-900 rounded-full px-5 py-3 font-semibold tracking-wider transition duration-500 ease-in-out transform hover:bg-gray-300 mr-4">Hire Me</a>
+            <a href="cv.pdf" class="button animate__animated animate__bounceIn animate__delay-2s inline-block bg-gray-700 text-white rounded-full px-5 py-3 font-semibold tracking-wider transition duration-500 ease-in-out transform hover:bg-gray-400">My Resume</a>
+            <br><br><br><div class="social-menu">
+              <ul>
+                <li><a href="https://www.facebook.com/tanvir.tusher.10"><i class="animate__animated animate__bounceIn animate__delay-2s fab fa-facebook fa-2x p-2"></i></a></li>
+                <li><a href="https://twitter.com/TanvirA14006801"><i class="animate__animated animate__bounceIn animate__delay-2s fab fa-twitter fa-2x p-2"></i></a></li>
+                <li><a href="https://instagram.com/tusher207?igshid=ZDdkNTZiNTM="><i class="animate__animated animate__bounceIn animate__delay-2s fab fa-instagram fa-2x p-2"></i></a></li>
+                <li><a href="https://github.com/Hakir-Mubarmaj"><i class="animate__animated animate__bounceIn animate__delay-2s fab fa-github fa-2x p-2"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/tanvir-tushar-82911123a"><i class="animate__animated animate__bounceIn animate__delay-2s fab fa-linkedin fa-2x p-2"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="home2 paint-animation">
+          <h1 class="text-3xl font-bold text-gray-800"><img src="https://i.ibb.co/JkyPx4k/output.png" alt=""></h1>
+          </div>
+        </div>
+        </div>
+        </div>
+      </section>
+	  
+	<section class="full-height bg-[url('https://media.istockphoto.com/id/1271408351/photo/digital-screen-with-encryption-data-background-big-data-with-binary-computer-code-safe-your.jpg?b=1&s=170667a&w=0&k=20&c=B1XzkENUPMrS-vy9LiYWE1Aadh-tDHlpgA8ebrEV--s=')] bg-no-repeat bg-cover bg-center opacity-600" id="about">
+          <div class="flex flex-col items-center justify-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <div class="container home2">
+            <img class="image animate__animated animate__pulse animate__infinite" src="https://i.ibb.co/DG1tCyD/img.jpg" alt="me" />
+          </div>
+          <div class="container">
+          <h2 class="mt-4 text-4xl font-bold text-gray-400 text-center">
+            About Me
+          </h2>
+          <p class="trirong font-bold mt-4 text-xl text-white max-w-7xl text-center outline-black outline-8">
+            Hello, I'm Tanvir Ahmed, a Computer Science and Engineering student at the University of Barisal. I have a passion for programming and have experience in several programming languages, including C, C++, Java, JavaScript, HTML, CSS, PHP, SQL, and Python. I enjoy solving problems and I'm constantly honing my skills in web development.
+            <br><br>
+            I have completed several projects in Android app development and Java programming, and I'm always looking for new challenges to broaden my horizons. In addition to my programming skills, I have a keen interest in app development and cyber security. 
+            <br><br>
+            When I'm not coding, I enjoy spending time with my family and friends, reading tech blogs, and staying up to date with the latest trends in the tech industry. I'm always excited to learn and grow as a programmer and look forward to new opportunities to showcase my skills.
+            <br><br>
+            If you're interested in discussing any projects or opportunities, please feel free to contact me 
+          </p>
+          <a href="#contact" class="contact inline-block bg-gray-900 text-gray-200 rounded-full px-5 py-3 font-semibold tracking-wider transition duration-500 ease-in-out transform hover:bg-white hover:text-black hover:font-bold">Contact Me</a>
+          </div>
+          </div>
+          </div>
+        </div>
+    </section>
+    
+    <section class="full-height bg-[url('https://img.freepik.com/premium-photo/creative-workspace-top-view-with-blank-empty-page-notepad-space-yellow-background_67155-31058.jpg')] bg-no-repeat bg-cover bg-center" id="projects">
+      <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+        <h2 class="text-3xl font-bold mb-8 text-center">PROJECTS</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="projectCards">
+          <!-- Project Cards will be dynamically inserted here -->
+        </div>
+        <div class="flex justify-center mt-8" id="paginationButtons">
+          <!-- Pagination buttons will be dynamically inserted here -->
+        </div>
+      </div>
+    </section>
+
+    <!--section class="full-height" id="skills">
+      <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <h2 class="text-3xl font-bold mb-8 text-center">Skills</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="skillCards">
+        
+        </div>
+        <div class="flex justify-center mt-8" id="paginationButtons">
+         
+        </div>
+      </div>
+    </section-->
+    
+    
+	
+  <footer class="bg-gray-800 text-white">
+  <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+  <div
+    class="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between">
+    <div class="mr-12 hidden lg:block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <div class="flex justify-center">
+      <a href="https://www.facebook.com/tanvir.tusher.10" class="mr-6 text-neutral-600 dark:text-neutral-200">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4 w-4 hover:opacity-25"
+          fill="currentColor"
+          viewBox="0 0 24 24">
+          <path
+            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+        </svg>
+      </a>
+      <a href="https://twitter.com/TanvirA14006801" class="mr-6 text-neutral-600 dark:text-neutral-200">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4 w-4 hover:opacity-25"
+          fill="currentColor"
+          viewBox="0 0 24 24">
+          <path
+            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+        </svg>
+      </a>
+      <a href="#" class="mr-6 text-neutral-600 dark:text-neutral-200">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5 hover:opacity-25"
+          fill="currentColor"
+          viewBox="0 0 24 24">
+          <path
+            d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z"
+            fill-rule="evenodd"
+            clip-rule="evenodd" />
+        </svg>
+      </a>
+      <a href="https://instagram.com/tusher207?igshid=ZDdkNTZiNTM=" class="mr-6 text-neutral-600 dark:text-neutral-200">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4 w-4 hover:opacity-25"
+          fill="currentColor"
+          viewBox="0 0 24 24">
+          <path
+            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+        </svg>
+      </a>
+      <a href="https://www.linkedin.com/in/tanvir-tushar-82911123a" class="mr-6 text-neutral-600 dark:text-neutral-200">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4 w-4 hover:opacity-25"
+          fill="currentColor"
+          viewBox="0 0 24 24">
+          <path
+            d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+        </svg>
+      </a>
+      <a href="https://github.com/Hakir-Mubarmaj" class="text-neutral-600 dark:text-neutral-200">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4 w-4 hover:opacity-25"
+          fill="currentColor"
+          viewBox="0 0 24 24">
+          <path
+            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="mx-6 py-10 text-center md:text-left">
+    <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div class="">
+        <h6
+          class="mb-4 flex items-left justify-center font-semibold uppercase md:justify-start">
+          My Portfolio
+        </h6>
+        <p>
+          This website represent my works and it also give you
+          a overview about me and my Skills.
+          I am basically a web developer and a software engineer
+          open for work.
+        </p>
+      </div>
+      <div class="padding">
+        <h6
+          class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+          Useful links
+        </h6>
+        <p class="mb-4">
+          <a href="#home" class="text-neutral-600 dark:text-neutral-200 hover:opacity-25"
+            >Back To Home</a
+          >
+        </p>
+        <p class="mb-4">
+          <a href="#about" class="text-neutral-600 dark:text-neutral-200 hover:opacity-25"
+            >About Me</a
+          >
+        </p>
+        <p class="mb-4">
+          <a href="#projects" class="text-neutral-600 dark:text-neutral-200 hover:opacity-25"
+            >My Projects</a
+          >
+        </p>
+        <p>
+          <a href="#contact" class="text-neutral-600 dark:text-neutral-200 hover:opacity-25"
+            >My Contact</a
+          >
+        </p>
+      </div>
+      <div>
+        <h6
+          class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+          Contact
+        </h6>
+        <p class="mb-4 flex items-center justify-center md:justify-start">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="mr-3 h-5 w-5">
+            <path
+              d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
+            <path
+              d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
+          </svg>
+          8200-Barisal-Sadar, Barisal, Bangladesh.
+        </p>
+        <p class="mb-4 flex items-center justify-center md:justify-start">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="mr-3 h-5 w-5">
+            <path
+              d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+            <path
+              d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+          </svg>
+          tushartanvir719@gmail.com
+        </p>
+        <p class="mb-4 flex items-center justify-center md:justify-start">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="mr-3 h-5 w-5">
+            <path
+              fill-rule="evenodd"
+              d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+              clip-rule="evenodd" />
+          </svg>
+          +880 1317012940
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="bg-neutral-200 p-6 text-center dark:bg-neutral-700 w-full">
+    <span>© 2023 Copyright:</span>
+    <a>Tanvir Ahmed</a>
+  </div>
+  </div>
+</footer>
+
+
+      <script>
+        const li=document.querySelectorAll(".link");
+        const sec=document.querySelectorAll("section");
+
+        function activeMenu(){
+            let len=sec.length;
+            while(--len && window.scrollY + 97 < sec[len].offsetTop){}
+            li.forEach(ltx => ltx.classList.remove("active"));
+            li[len].classList.add("active");
+        }
+        activeMenu();
+        window.addEventListener("scroll", activeMenu);
+
+        // Get the navbar toggle button element and menu element
+        const navbarToggle = document.getElementById('navbar-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        // Add an event listener to the navbar toggle button
+        navbarToggle.addEventListener('click', () => {
+        // Toggle the "hidden" class on the mobile menu element
+        mobileMenu.classList.toggle('hidden');
+        });
+		
+		// Optional JavaScript to stop the animation
+        let typingTimeout;
+
+        function stopTyping() {
+        clearTimeout(typingTimeout);
+        document.querySelector('.typing-text h1').style.animation = 'none';
+        }
+
+
+
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+          const projectCardsContainer = document.getElementById('projectCards');
+          const paginationContainer = document.getElementById('paginationButtons');
+          const projects = []; // Array containing all project data
+        
+          // Simulated data for 12 projects
+          const sampleData = [
+            {
+              title: 'CMH-Farmacy-System',
+              description: 'Its a java swing framework project. Want to build it for the sake Retire Army Persons as there is no rules regulation in the Farmacy of CMH.',
+              techUsed: ['java'],
+              imageUrl: 'project_image_1.jpg',
+              detailsLink: 'https://github.com/Hakir-Mubarmaj/CMH-Farmacy-System'
+            },
+            {
+              title: 'BU-Tutorial-Point',
+              description: 'This is a blog type website where study material uploaded and learnt by users. Simple use of authentication authorization and CRUD operation.',
+              techUsed: ['php','HTML', 'CSS', 'JavaScript'],
+              imageUrl: 'project_image_2.jpg',
+              detailsLink: 'http://ink-share.infinityfreeapp.com/'
+            },
+            {
+              title: 'Ink-Sharee',
+              description: 'InkShare, a book sharing plartform for those student who are unable to buy books of their own. It is a non-profitable foundation.',
+              techUsed: ['laravel','php','HTML', 'CSS', 'JavaScript'],
+              imageUrl: 'project_image_3.jpg',
+              detailsLink: '#'
+            },
+            {
+              title: 'Amigo',
+              description: 'An customize voice assistant which will assist you to do various task. Sky is the limit for this kind of project. Still working on.......',
+              techUsed: ['python'],
+              imageUrl: 'project_image_4.jpg',
+              detailsLink: '#'
+            },
+            {
+              title: 'Airport Routs- Asia',
+              description: 'This ia a tkinter gui based airport route shortest path simulation project. DKastra algorithm and python are used in this project.',
+              techUsed: ['python'],
+              imageUrl: 'project_image_5.jpg',
+              detailsLink: '#'
+            },
+            {
+              title: 'Function Route Finder',
+              description: 'A combine code for Bisection method and and False position method to find the value of root for a given function and graphical representation.',
+              techUsed: ['python'],
+              imageUrl: 'project_image_6.jpg',
+              detailsLink: 'https://github.com/Hakir-Mubarmaj/Combine-root-and-error-estimation-using-bisection-and-false-position-method.'
+            },
+            {
+              title: 'Event Management System',
+              description: 'A console based project for event management, no database used instead file has been used. Simple c language based project for beginner.',
+              techUsed: ['c'],
+              imageUrl: 'project_image_7.jpg',
+              detailsLink: 'https://github.com/Hakir-Mubarmaj/Event_Management_Stela_Novus'
+            }
+          ];
+        
+          // Push sample data into the projects array
+          projects.push(...sampleData);
+        
+          const cardsPerPage = 6; // Number of cards to display per page
+          const totalPages = Math.ceil(projects.length / cardsPerPage);
+          let currentPage = 1;
+        
+          displayProjectCards(currentPage, cardsPerPage); // Display initial page
+        
+          // Function to display project cards based on the current page
+          function displayProjectCards(pageNumber, cardsPerPage) {
+            projectCardsContainer.innerHTML = ''; // Clear previous cards
+        
+            const start = (pageNumber - 1) * cardsPerPage;
+            const end = pageNumber * cardsPerPage;
+            const displayedProjects = projects.slice(start, end);
+        
+            displayedProjects.forEach((project) => {
+              const card = createProjectCard(project);
+              projectCardsContainer.appendChild(card);
+            });
+          }
+        
+          // Function to create a project card
+          function createProjectCard(projectData) {
+            const card = document.createElement('div');
+            card.className = 'bg-white rounded-lg shadow-md overflow-hidden';
+        
+            const image = document.createElement('img');
+            image.src = projectData.imageUrl;
+            image.alt = 'Project Image';
+            image.className = 'w-full h-48 object-cover object-center';
+            card.appendChild(image);
+        
+            const cardBody = document.createElement('div');
+            cardBody.className = 'p-4';
+        
+            const title = document.createElement('h3');
+            title.className = 'text-xl font-semibold mb-2';
+            title.innerText = projectData.title;
+            cardBody.appendChild(title);
+        
+            const description = document.createElement('p');
+            description.className = 'text-gray-600 mb-4';
+            description.innerText = projectData.description;
+            cardBody.appendChild(description);
+        
+            const detailsRow = document.createElement('div');
+            detailsRow.className = 'flex justify-between items-center';
+
+            const detailsLink = document.createElement('a');
+            detailsLink.href = projectData.detailsLink;
+            detailsLink.className = 'text-blue-500 hover:underline';
+            detailsLink.innerText = 'View Details';
+            detailsRow.appendChild(detailsLink);
+
+            const techUsedContainer = document.createElement('div');
+            techUsedContainer.className = 'flex items-center';
+
+            const techLabel = document.createElement('span');
+            techLabel.className = 'text-sm mr-2';
+            techLabel.innerText = 'Tech Used:';
+            techUsedContainer.appendChild(techLabel);
+
+            projectData.techUsed.forEach((tech) => {
+              const techIcon = document.createElement('i');
+              techIcon.className = `fab fa-${getTechIcon(tech)} text-xl ml-2`;
+              techUsedContainer.appendChild(techIcon);
+            });
+          
+            detailsRow.appendChild(techUsedContainer);
+            cardBody.appendChild(detailsRow);
+            card.appendChild(cardBody);
+          
+            return card;
+          }
+          
+          // Function to get Font Awesome icon names for different technologies
+          function getTechIcon(tech) {
+            switch (tech.toLowerCase()) {
+              case 'html':
+                return 'html5';
+              case 'css':
+                return 'css3';
+              case 'javascript':
+                return 'js';
+              case 'python':
+                return 'python';
+              case 'php':
+                return 'php';
+              case 'c':
+                return 'code';
+              case 'laravel':
+                return 'laravel';
+              case 'java':
+                return 'java';
+              default:
+                return 'code'; // You can set a default icon for other technologies
+            }
+          }
+        
+          // Function to handle pagination button click
+          function handlePaginationClick(page) {
+            currentPage = page;
+            displayProjectCards(currentPage, cardsPerPage);
+            updatePaginationButtons();
+          }
+        
+          // Function to update pagination buttons
+          function updatePaginationButtons() {
+            paginationContainer.innerHTML = ''; // Clear previous buttons
+            for (let i = 1; i <= totalPages; i++) {
+              const button = document.createElement('button');
+              button.innerText = i;
+              button.className = currentPage === i ? 'bg-blue-500 text-white rounded-md px-3 py-1 mx-1' : 'bg-gray-200 text-gray-600 rounded-md px-3 py-1 mx-1';
+              button.addEventListener('click', () => handlePaginationClick(i));
+              paginationContainer.appendChild(button);
+            }
+          }
+        
+          updatePaginationButtons(); // Initial pagination button setup
+        });
+        
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+          const skillCardsContainer = document.getElementById('skillCards');
+          const paginationContainer = document.getElementById('paginationButtons');
+          const skills = [
+            'Python',
+            'Java',
+            'C',
+            'PHP',
+            'Laravel',
+            'HTML',
+            'CSS',
+            'JavaScript',
+            'Flutter',
+            'Java Swing'
+            // Add other skills here
+          ]; // Array containing all skills
+        
+          const cardsPerPage = 6; // Number of skill cards to display per page
+          const totalPages = Math.ceil(skills.length / cardsPerPage);
+          let currentPage = 1;
+        
+          displaySkillCards(currentPage, cardsPerPage); // Display initial page
+        
+          // Function to display skill cards based on the current page
+          function displaySkillCards(pageNumber, cardsPerPage) {
+            skillCardsContainer.innerHTML = ''; // Clear previous cards
+        
+            const start = (pageNumber - 1) * cardsPerPage;
+            const end = pageNumber * cardsPerPage;
+            const displayedSkills = skills.slice(start, end);
+        
+            displayedSkills.forEach((skill) => {
+              const card = createSkillCard(skill);
+              skillCardsContainer.appendChild(card);
+            });
+          }
+        
+          // Function to create a skill card
+          function createSkillCard(skill) {
+            const card = document.createElement('div');
+            card.className = 'bg-white rounded-lg shadow-md overflow-hidden';
+        
+            // You can add images for each skill (replace 'image_path' with the actual image URL or path)
+            const image = document.createElement('img');
+            image.src = 'image_path'; // Replace 'image_path' with the actual image URL or path for the skill
+            image.alt = `${skill} Image`;
+            image.className = 'w-full h-48 object-cover object-center';
+            card.appendChild(image);
+        
+            const cardBody = document.createElement('div');
+            cardBody.className = 'p-4';
+        
+            const skillTitle = document.createElement('h3');
+            skillTitle.className = 'text-xl font-semibold mb-2';
+            skillTitle.innerText = skill;
+            cardBody.appendChild(skillTitle);
+        
+            card.appendChild(cardBody);
+        
+            return card;
+          }
+        
+          // Function to handle pagination button click
+          function handlePaginationClick(page) {
+            currentPage = page;
+            displaySkillCards(currentPage, cardsPerPage);
+            updatePaginationButtons();
+          }
+        
+          // Function to update pagination buttons
+          function updatePaginationButtons() {
+            paginationContainer.innerHTML = ''; // Clear previous buttons
+            for (let i = 1; i <= totalPages; i++) {
+              const button = document.createElement('button');
+              button.innerText = i;
+              button.className = currentPage === i ? 'bg-blue-500 text-white rounded-md px-3 py-1 mx-1' : 'bg-gray-200 text-gray-600 rounded-md px-3 py-1 mx-1';
+              button.addEventListener('click', () => handlePaginationClick(i));
+              paginationContainer.appendChild(button);
+            }
+          }
+        
+          updatePaginationButtons(); // Initial pagination button setup
+        });
+        
+
+      </script>
+</body>
+</html>
