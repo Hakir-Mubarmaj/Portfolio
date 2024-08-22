@@ -113,7 +113,7 @@
             <br><br>
             If you're interested in discussing any projects or opportunities, please feel free to contact me 
           </p>
-          <a href="#contact" class="contact inline-block bg-gray-900 text-gray-200 rounded-full px-5 py-3 font-semibold tracking-wider transition duration-500 ease-in-out transform hover:bg-white hover:text-black hover:font-bold">Contact Me</a>
+          <a href="#foot" class="contact inline-block bg-gray-900 text-gray-200 rounded-full px-5 py-3 font-semibold tracking-wider transition duration-500 ease-in-out transform hover:bg-white hover:text-black hover:font-bold">Contact Me</a>
           </div>
           </div>
           </div>
@@ -132,7 +132,7 @@
       </div>
     </section>
 
-    <!--section class="full-height" id="skills">
+    <section class="full-height bg-[url('skill_back.jpeg')] bg-no-repeat bg-cover bg-center" id="skills">
       <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <h2 class="text-3xl font-bold mb-8 text-center">Skills</h2>
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="skillCards">
@@ -142,11 +142,11 @@
          
         </div>
       </div>
-    </section-->
+    </section>
     
     
 	
-  <footer class="bg-gray-800 text-white">
+  <footer class="bg-gray-800 text-white" id="foot">
   <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
   <div
     class="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between">
@@ -534,64 +534,101 @@
         document.addEventListener('DOMContentLoaded', function () {
           const skillCardsContainer = document.getElementById('skillCards');
           const paginationContainer = document.getElementById('paginationButtons');
+          
           const skills = [
-            'Python',
-            'Java',
-            'C',
-            'PHP',
-            'Laravel',
-            'HTML',
-            'CSS',
-            'JavaScript',
-            'Flutter',
-            'Java Swing'
-            // Add other skills here
-          ]; // Array containing all skills
-        
-          const cardsPerPage = 6; // Number of skill cards to display per page
+              'Python',
+              'Java',
+              'C',
+              'PHP',
+              'Laravel',
+              'HTML',
+              'CSS',
+              'JavaScript',
+              'Flutter',
+              'Java Swing'
+          ];
+          
+          const image_paths = [
+              'skills/python.png',
+              'skills/java.png',
+              'skills/c.png',
+              'skills/php.png',
+              'skills/laravel.png',
+              'skills/html.png',
+              'skills/css.png',
+              'skills/javascript.png',
+              'skills/flutter.png',
+              'skills/java_swing.png'
+          ];
+          
+          const skill_levels = [
+              '75%',
+              '70%',
+              '85%',
+              '80%',
+              '75%',
+              '90%',
+              '85%',
+              '65%',
+              '75%',
+              '70%'
+          ];
+          
+          const cardsPerPage = 8; // Number of skill cards to display per page
           const totalPages = Math.ceil(skills.length / cardsPerPage);
           let currentPage = 1;
-        
+          
           displaySkillCards(currentPage, cardsPerPage); // Display initial page
-        
+          
           // Function to display skill cards based on the current page
           function displaySkillCards(pageNumber, cardsPerPage) {
-            skillCardsContainer.innerHTML = ''; // Clear previous cards
-        
-            const start = (pageNumber - 1) * cardsPerPage;
-            const end = pageNumber * cardsPerPage;
-            const displayedSkills = skills.slice(start, end);
-        
-            displayedSkills.forEach((skill) => {
-              const card = createSkillCard(skill);
-              skillCardsContainer.appendChild(card);
-            });
+              skillCardsContainer.innerHTML = ''; // Clear previous cards
+          
+              const start = (pageNumber - 1) * cardsPerPage;
+              const end = pageNumber * cardsPerPage;
+              const displayedSkills = skills.slice(start, end);
+              const displayedImages = image_paths.slice(start, end);
+              const displayedLevels = skill_levels.slice(start, end);
+          
+              displayedSkills.forEach((skill, index) => {
+                  const card = createSkillCard(skill, displayedImages[index], displayedLevels[index]);
+                  skillCardsContainer.appendChild(card);
+              });
           }
-        
+          
           // Function to create a skill card
-          function createSkillCard(skill) {
-            const card = document.createElement('div');
-            card.className = 'bg-white rounded-lg shadow-md overflow-hidden';
-        
-            // You can add images for each skill (replace 'image_path' with the actual image URL or path)
-            const image = document.createElement('img');
-            image.src = 'image_path'; // Replace 'image_path' with the actual image URL or path for the skill
-            image.alt = `${skill} Image`;
-            image.className = 'w-full h-48 object-cover object-center';
-            card.appendChild(image);
-        
-            const cardBody = document.createElement('div');
-            cardBody.className = 'p-4';
-        
-            const skillTitle = document.createElement('h3');
-            skillTitle.className = 'text-xl font-semibold mb-2';
-            skillTitle.innerText = skill;
-            cardBody.appendChild(skillTitle);
-        
-            card.appendChild(cardBody);
-        
-            return card;
+          function createSkillCard(skill, imagePath, skillLevel) {
+              const card = document.createElement('div');
+              card.className = 'bg-white rounded-lg shadow-md overflow-hidden';
+          
+              const image = document.createElement('img');
+              image.src = imagePath; // Use the correct image path
+              image.alt = `${skill} Image`;
+              image.className = 'w-full h-48 object-cover object-center';
+              card.appendChild(image);
+          
+              const cardBody = document.createElement('div');
+              cardBody.className = 'p-4';
+          
+              const skillTitle = document.createElement('h3');
+              skillTitle.className = 'text-xl font-semibold mb-2';
+              skillTitle.innerText = skill;
+              cardBody.appendChild(skillTitle);
+          
+              const skillLevelDiv = document.createElement('div');
+              skillLevelDiv.className = 'w-full bg-gray-200 rounded-full h-2.5 mb-4';
+              const skillLevelBar = document.createElement('div');
+              skillLevelBar.className = 'bg-blue-600 h-2.5 rounded-full';
+              skillLevelBar.style.width = skillLevel; // Set the width of the bar based on the skill level
+              skillLevelDiv.appendChild(skillLevelBar);
+              cardBody.appendChild(skillLevelDiv);
+          
+              card.appendChild(cardBody);
+          
+              return card;
           }
+      
+      
         
           // Function to handle pagination button click
           function handlePaginationClick(page) {
